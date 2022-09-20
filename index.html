@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,7 @@
 <body>
     <h1>HW1 Submission</h1>
 
-    <p id="Para1"> I hope to learn the basics of website development in this class. 
+    <p id="TEXT"> I hope to learn the basics of website development in this class. 
     I want to become comfortable with HTML and continue to <em>improve</em> <br>my coding skills. 
     I also want to learn about the <strong>design</strong> aspect of building a website and the thought 
     that goes into how a site looks. </p>
@@ -20,14 +21,28 @@
 
     <p><a href="https://www.topuniversities.com/courses/computer-science-information-systems/why-everyone-should-learn-code">Why everyone should learn how to code</a></p>
 
-    <button> This button changes the color of the text!</button>
-    <script>
-        function changeColor() {
-          document.getElementById("Para1").style.color = "red";   
-        }
-    </script>
-        
-        <button type="button" onclick="myFunction()">Click Me!</button>
+    
 </body>
 
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
 </html>
