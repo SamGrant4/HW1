@@ -12,26 +12,25 @@
 <body>
     <h1>HW1 Submission</h1>
 
-    <p id="TEXT"> I hope to learn the basics of website development in this class. </p>
-    <!--I want to become comfortable with HTML and continue to <em>improve</em> <br>my coding skills. 
+    <p id="TEXT"> I hope to learn the basics of website development in this class.
+    I want to become comfortable with HTML and continue to <em>improve</em> <br>my coding skills. 
     I also want to learn about the <strong>design</strong> aspect of building a website and the thought 
-    that goes into how a site looks. </p> -->
-    
-    <script>
-    function myFunction() {
-        document.getElementById("TEXT").style.fontSize = "25px"; 
-        document.getElementById("TEXT").style.color = "red";
-        document.getElementById("TEXT").style.backgroundColor = "yellow";        
-    }
-    </script>
+    that goes into how a site looks. </p> 
 
-    <button type="button" onclick="myFunction()">Click Me!</button>
-    <br>
     <img src="coding.jfif" alt="Person coding" width="350" height="162">
 
     <br>
     <a href="https://www.topuniversities.com/courses/computer-science-information-systems/why-everyone-should-learn-code">Why everyone should learn how to code</a>
 
+    <script>
+        function changeText() {
+            document.getElementById("TEXT").style.fontSize = "25px"; 
+            document.getElementById("TEXT").style.color = "red";
+            document.getElementById("TEXT").style.backgroundColor = "yellow";        
+        }
+    </script>
+    
+    <p><button type="button" onclick="changeText()">Change color of text!</button></p>
     
 </body>
 
